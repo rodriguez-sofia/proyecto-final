@@ -1,0 +1,701 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.grid__container {
+  display: grid;
+  grid-template-areas: " nav  nav    nav    nav" "header  header header header" "main  main  main  main" "section section section section" "aside aside aside aside" "footer footer footer footer";
+  background: linear-gradient(red, orange);
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+  height: 1188px;
+  margin-top: 21px;
+  padding: 51px;
+}
+
+nav {
+  width: 57%;
+  padding: 60px;
+}
+
+ul {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  font-size: 22px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fondo {
+  height: 500px;
+  width: 100%;
+}
+
+.fondo__img {
+  padding: 35px;
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+}
+
+.dragones {
+  grid-area: dragones;
+}
+
+.dragones .animaciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  background-size: cover;
+}
+
+.dragones .animaciones .card__animaciones {
+  width: 150px;
+  margin: 10px;
+}
+
+.dragones .animaciones .card__animaciones .card__animaciones:hover {
+  -webkit-transform: scale3d(2s);
+  transform: scale3d(2s);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.formulario {
+  font-size: 25px;
+  height: 368px;
+  gap: 10px;
+  padding: 30px;
+  background-color: rgb(255, 104, 3);
+  max-width: 800px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 80px;
+  grid-template-areas: "titulo titulo " "nomApell email" "tel asunto " "mensaje  mensaje " "btn   btn ";
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 5px 5px rgb(248, 230, 243);
+  box-shadow: 0px 0px 5px 5px rgb(248, 230, 243);
+}
+
+.formulario label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario label textarea,
+.formulario label input {
+  background-color: rgb(255, 156, 81);
+  border: 0;
+  border-bottom: 1px solid white;
+  outline: none;
+}
+
+label > input .formulario label:focus {
+  color: white;
+}
+
+.formulario button {
+  width: 215px;
+  height: 47px;
+  grid-area: btn;
+  background-color: rgb(255, 141, 74);
+  color: rgb(217, 216, 214);
+  border-radius: 30px;
+  border-color: white;
+  font-size: 22px;
+  margin-top: 10px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.formulario h2:nth-child(1) {
+  grid-area: titulo;
+  color: white;
+}
+
+.formulario label:nth-child(2) {
+  grid-area: nomApell;
+}
+
+.formulario label:nth-child(3) {
+  grid-area: email;
+}
+
+.formulario label :nth-child(4) {
+  grid-area: tel;
+}
+
+.formulario label :nth-child(5) {
+  grid-area: asunto;
+}
+
+.formulario label :nth-child(6) {
+  grid-area: mensaje;
+}
+
+.formulario h2:nth-child(1) {
+  grid-area: titulo;
+  color: white;
+}
+
+.formulario label:nth-child(2) {
+  grid-area: nomApell;
+}
+
+.formulario label:nth-child(3) {
+  grid-area: email;
+}
+
+.formulario label :nth-child(4) {
+  grid-area: tel;
+}
+
+.formulario label :nth-child(5) {
+  grid-area: asunto;
+}
+
+.formulario label :nth-child(6) {
+  grid-area: mensaje;
+}
+
+footer {
+  grid-area: footer;
+  gap: 20px;
+  width: 97%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+footer .card__redes__logo {
+  width: 50px;
+  height: 50px;
+  top: 64px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+footer .card__redes__logo .card__redes__logo:hover {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+
+.cards__dragonesdos {
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 81px;
+  margin-top: 57px;
+}
+
+.card__dragon__r .card__dragon__image {
+  height: 250px;
+  width: 250px;
+}
+
+.btn:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(red), to(orange));
+  background: linear-gradient(red, orange);
+  -webkit-box-shadow: 0px 0px 70px rgb(255, 243, 241);
+  box-shadow: 0px 0px 70px rgb(255, 243, 241);
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+}
+
+.button {
+  height: 58px;
+  grid-area: btn;
+  background-color: rgb(255, 141, 74);
+  color: rgb(217, 216, 214);
+  border-radius: 30px;
+  border-color: white;
+  margin-top: 10px;
+  padding: 20px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.card__titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 6px;
+  margin: 10px;
+  height: 250px;
+}
+
+.card__titulo #titulo {
+  text-align: center;
+  margin-top: 34px;
+  top: 188px;
+  left: 533px;
+  font-size: 40px;
+  color: rgb(254, 89, 0);
+  text-shadow: 5px 5px 2px rgb(251, 251, 251);
+}
+
+.dragones__section2 {
+  display: flex;
+  justify-content: center;
+}
+
+.card__dragon__smaug {
+  margin: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 565px;
+  width: 800px;
+  padding: 27px;
+}
+
+.card__dragon__smaug .card__dragon__s1 {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.grid__container {
+  display: grid;
+  grid-template-areas: " nav  nav    nav    nav" "header  header header header" "main  main  main  main" "section section section section" "aside aside aside aside" "footer footer footer footer";
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+  height: 1188px;
+  margin-top: 21px;
+  padding: 51px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+.logotipo {
+  height: 129;
+}
+
+.logotipo__imagen {
+  height: 143px;
+  padding: 9px;
+}
+
+nav {
+  width: 57%;
+  padding: 60px;
+}
+
+@media (min-width: 320px) {
+  a {
+    font-size: 35px;
+    margin: 25px;
+  }
+}
+ul {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  font-size: 22px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fondo {
+  height: 500px;
+  width: 100%;
+}
+
+@media (min-width: 320px) {
+  .fondo {
+    padding: 10px;
+    width: 112%;
+    height: 551px;
+  }
+}
+@media (min-width: 320px) {
+  #titulo {
+    font-size: 80px;
+    text-align: center;
+  }
+}
+.fondo__img {
+  padding: 35px;
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+}
+
+header nav ul li a:hover {
+  border-bottom: 1px solid;
+  background: -webkit-gradient(linear, left top, left bottom, from(red), to(orange));
+  background: linear-gradient(red, orange);
+  -webkit-text-decoration-style: none;
+  text-decoration-style: none;
+}
+
+.dragones {
+  grid-area: dragones;
+}
+
+.dragones .animaciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-evenly;
+  background-size: cover;
+}
+
+.dragones .animaciones .card__animaciones {
+  width: 150px;
+  margin: 10px;
+}
+
+.dragones .animaciones .card__animaciones .card__animaciones:hover {
+  -webkit-transform: scale3d(2s);
+  transform: scale3d(2s);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.ubicacion {
+  height: 530px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 32px;
+  margin: 10px;
+  gap: 28px;
+}
+
+.ubicacion .card__ubicacion__texto {
+  font-size: 20px;
+  margin: 5px;
+  padding: 2px;
+}
+
+.formulario {
+  font-size: 25px;
+  height: 368px;
+  gap: 10px;
+  padding: 30px;
+  background-color: rgb(255, 104, 3);
+  max-width: 800px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 80px;
+  grid-template-areas: "titulo titulo " "nomApell email" "tel asunto " "mensaje  mensaje " "btn   btn ";
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 5px 5px rgb(248, 230, 243);
+  box-shadow: 0px 0px 5px 5px rgb(248, 230, 243);
+}
+
+.formulario label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario label textarea,
+.formulario label input {
+  background-color: rgb(255, 156, 81);
+  border: 0;
+  border-bottom: 1px solid white;
+  outline: none;
+}
+
+label > input .formulario label:focus {
+  color: white;
+}
+
+.formulario button {
+  width: 215px;
+  height: 47px;
+  grid-area: btn;
+  background-color: rgb(255, 141, 74);
+  color: rgb(217, 216, 214);
+  border-radius: 30px;
+  border-color: white;
+  font-size: 22px;
+  margin-top: 10px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.formulario h2:nth-child(1) {
+  grid-area: titulo;
+  color: white;
+}
+
+.formulario label:nth-child(2) {
+  grid-area: nomApell;
+}
+
+.formulario label:nth-child(3) {
+  grid-area: email;
+}
+
+.formulario label :nth-child(4) {
+  grid-area: tel;
+}
+
+.formulario label :nth-child(5) {
+  grid-area: asunto;
+}
+
+.formulario label :nth-child(6) {
+  grid-area: mensaje;
+}
+
+.formulario h2:nth-child(1) {
+  grid-area: titulo;
+  color: white;
+}
+
+.formulario label:nth-child(2) {
+  grid-area: nomApell;
+}
+
+.formulario label:nth-child(3) {
+  grid-area: email;
+}
+
+.formulario label :nth-child(4) {
+  grid-area: tel;
+}
+
+.formulario label :nth-child(5) {
+  grid-area: asunto;
+}
+
+.formulario label :nth-child(6) {
+  grid-area: mensaje;
+}
+
+footer {
+  grid-area: footer;
+  gap: 20px;
+  width: 97%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+footer .card__redes__logo {
+  width: 50px;
+  height: 50px;
+  top: 64px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+footer .card__redes__logo .card__redes__logo:hover {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+
+.cards__dragonesdos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 81px;
+  margin-top: 57px;
+}
+
+.card__dragon__r {
+  width: 450px;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.card__dragon__r .card__dragon__image {
+  height: 250px;
+  width: 250px;
+}
+
+.card__dragon__smaug {
+  margin: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  justify-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 565px;
+  width: 800px;
+  padding: 27px;
+}
+
+.card__dragon__smaug .card__dragon__s1 {
+  height: 500px;
+  width: 500px;
+}
+
+.btn {
+  text-decoration: none;
+  -webkit-text-decoration-style: none;
+  text-decoration-style: none;
+  color: #0b0a0a;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(red), to(orange));
+  background: linear-gradient(red, orange);
+  -webkit-box-shadow: 0px 0px 70px rgb(255, 243, 241);
+  box-shadow: 0px 0px 70px rgb(255, 243, 241);
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+}
+
+.button {
+  height: 58px;
+  grid-area: btn;
+  background-color: rgb(255, 141, 74);
+  color: rgb(217, 216, 214);
+  border-radius: 30px;
+  border-color: white;
+  margin-top: 10px;
+  padding: 20px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.card__titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 6px;
+  margin: 10px;
+  height: 250px;
+}
+
+#titulo {
+  text-align: center;
+  margin-top: 34px;
+  top: 188px;
+  left: 533px;
+  font-size: 40px;
+  color: rgb(254, 89, 0);
+  text-shadow: 5px 5px 2px rgb(251, 251, 251);
+}
+@media (max-width: 2560px) {
+  #titulo {
+    font-size: 50px;
+  }
+}
+
+.dragones__section2 {
+  display: flex;
+  justify-content: center;
+}

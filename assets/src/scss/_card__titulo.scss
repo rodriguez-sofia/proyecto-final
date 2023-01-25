@@ -1,0 +1,25 @@
+.card__titulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 6px;
+    margin: 10px;
+    height: 250px;
+}
+
+.card__titulo #titulo {
+    text-align: center;
+    margin-top: 34px;
+
+    top: 188px;
+    left: 533px;
+    font-size: 40px;
+    color: rgb(254, 89, 0);
+    text-shadow: 5px 5px 2px rgb(251, 251, 251);
+}

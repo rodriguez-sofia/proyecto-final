@@ -1,0 +1,108 @@
+.formulario {
+    font-size: 25px;
+    height: 368px;
+    gap: 10px;
+    padding: 30px;
+    background-color: rgb(255, 104, 3);
+    max-width: 800px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 80px;
+    grid-template-areas: "titulo titulo " "nomApell email" "tel asunto " "mensaje  mensaje " "btn   btn ";
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 5px 5px rgb(248, 230, 243);
+    box-shadow: 0px 0px 5px 5px rgb(248, 230, 243);
+}
+
+
+
+
+.formulario label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.formulario label textarea,
+.formulario label input {
+    background-color: rgb(255, 156, 81);
+    border: 0;
+    border-bottom: 1px solid white;
+    outline: none;
+}
+
+label>input .formulario label:focus {
+    color: white;
+}
+
+.formulario button {
+    width: 215px;
+    height: 47px;
+    grid-area: btn;
+    background-color: rgb(255, 141, 74);
+    color: rgb(217, 216, 214);
+    border-radius: 30px;
+    border-color: white;
+    font-size: 22px;
+    margin-top: 10px;
+    font-family: "Quicksand", sans-serif;
+}
+
+
+.formulario h2:nth-child(1) {
+    grid-area: titulo;
+    color: white;
+}
+
+.formulario label:nth-child(2) {
+    grid-area: nomApell;
+}
+
+.formulario label:nth-child(3) {
+    grid-area: email;
+}
+
+.formulario label :nth-child(4) {
+    grid-area: tel;
+}
+
+.formulario label :nth-child(5) {
+    grid-area: asunto;
+}
+
+.formulario label :nth-child(6) {
+    grid-area: mensaje;
+}
+
+.formulario h2:nth-child(1) {
+    grid-area: titulo;
+    color: white;
+}
+
+.formulario label:nth-child(2) {
+    grid-area: nomApell;
+}
+
+.formulario label:nth-child(3) {
+    grid-area: email;
+}
+
+.formulario label :nth-child(4) {
+    grid-area: tel;
+}
+
+.formulario label :nth-child(5) {
+    grid-area: asunto;
+}
+
+.formulario label :nth-child(6) {
+    grid-area: mensaje;
+}

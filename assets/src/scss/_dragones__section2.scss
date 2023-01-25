@@ -1,0 +1,52 @@
+.dragones__section2 {
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card__dragon__smaug {
+    margin: 44px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    justify-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 565px;
+    width: 800px;
+    padding: 27px;
+}
+
+.card__dragon__smaug .card__dragon__s1 {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+}

@@ -1,0 +1,20 @@
+.grid__container {
+    display: grid;
+    grid-template-areas: " nav  nav    nav    nav" "header  header header header"
+        "main  main  main  main" "section section section section" "aside aside aside aside" "footer footer footer footer";
+
+    background: linear-gradient(red, orange);
+}
+
+
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+    height: 1188px;
+    margin-top: 21px;
+    padding: 51px;
+}

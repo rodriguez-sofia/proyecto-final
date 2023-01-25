@@ -1,0 +1,29 @@
+.dragones {
+    grid-area: dragones;
+}
+
+.dragones .animaciones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+
+    background-size: cover;
+}
+
+.dragones .animaciones .card__animaciones {
+    width: 150px;
+    margin: 10px;
+
+}
+
+.dragones .animaciones .card__animaciones .card__animaciones:hover {
+    -webkit-transform: scale3d(2s);
+    transform: scale3d(2s);
+    -webkit-transition: 2s;
+    transition: 2s;
+}

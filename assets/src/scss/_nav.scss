@@ -1,0 +1,32 @@
+nav {
+    width: 57%;
+    padding: 60px;
+
+
+}
+
+%ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    font-size: 22px;
+    list-style: none;
+}
+
+ul {
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    font-size: 22px;
+    list-style: none;
+}
+
+a {
+
+    text-decoration: none;
+    $colorLetra: black;
+
+}
